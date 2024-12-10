@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "DrukTextWide-Medium-Trial";
+    src: url(../Druk_Collection.web/DrukTextWideFamily/DrukTextWide-Medium-Trial.otf);
+    font-weight: medium ;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DrukTextWide-Bold-Trial";
+    src: url(../Druk_Collection.web/DrukTextWideFamily/DrukTextWide-Bold-Trial.otf);
+    font-weight: bold ;
+    font-style: normal;
+}
+.date{
+    font-family: "DrukTextWide-Medium-Trial"; 
+    font-size: 234px;
+}
+.invite{
+    font-family: "DrukTextWide-Bold-Trial";
+    font-size: 97px;
+}
