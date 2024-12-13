@@ -39,12 +39,12 @@ body{
     position: absolute;
 }
 @keyframes circle {
-    0%{left: 0;top: -2vw;}
-    20%{left: 25vw;top: 0.5vw;}
-    40%{left: 50vw;top: -10vw;}
-    60%{left: 45vw;top: 0.5vw;}
-    80%{left: 25vw;top: -10vw;}
-    100% {left: 0;top: -2vw;}
+    0%{left: 0;top: 8vw;}
+    20%{left: 25vw;top: 10vw;}
+    40%{left: 50vw;top: 0vw;}
+    60%{left: 45vw;top: 10vw;}
+    80%{left: 25vw;top: 0vw;}
+    100% {left: 0;top: 8vw;}
     }
 #circle_2_container{
     background-color: #FF7A00;
@@ -55,12 +55,12 @@ body{
     position: absolute;
 }
 @keyframes circle_2 {
-    0%{left: 25vw;top: -10vw;}
-    20%{left: 0;top: 0.5vw;}
-    40%{left: 25vw;top: -10vw;}
-    60%{left: 50vw;top: 0.5vw;}
-    80%{left: 45vw;top: -3vw;}
-    100% {left: 25vw;top: -10vw;}
+    0%{left: 25vw;top: 10vw;}
+    20%{left: 0;top: 7vw;}
+    40%{left: 25vw;top: 0vw;}
+    60%{left: 50vw;top: 10vw;}
+    80%{left: 45vw;top: 7vw;}
+    100% {left: 25vw;top: 10vw;}
     }
 #circle_3_container{
     background-color: #FFD600;
@@ -71,12 +71,12 @@ body{
     position: absolute;
 }
 @keyframes circle_3 {
-    0%{left: 50vw;top: -10vw;}
-    20%{left: 25;top: 0.5vw;}
-    40%{left: 0vw;top: -10vw;}
-    60%{left: 25vw;top: 0.5vw;}
-    80%{left: 45vw;top: -3vw;}
-    100% {left: 50vw;top: -10vw;}
+    0%{left: 50vw;top: 0vw;}
+    20%{left: 25;top: 3vw;}
+    40%{left: 0vw;top: 0vw;}
+    60%{left: 25vw;top: 3vw;}
+    80%{left: 45vw;top: 1vw;}
+    100% {left: 50vw;top: 0vw;}
     }
 #string_1_container{
     background-color: #FFD600;
@@ -90,6 +90,9 @@ body{
     animation: scroll 10s linear infinite;
     padding: 2.5vw;
 }
+.invite:hover{
+    animation-play-state: paused;
+}
 @keyframes scroll {
     from {transform: translateX(0%);}
     to {transform: translateX(-156.5%); }
@@ -100,25 +103,100 @@ body{
    }
 #string_2_container{
     width: 10vw;
-    height: 50vw;
+    height: 60vw;
     overflow-x: hidden;
     position: relative;   
 }
 .drops{
-    margin-left: 3vw;
+    margin-left: 1.5vw;
     width: 7vw;
-    animation: scroll_drops 10s linear infinite;
+    animation: scroll_drops 6s linear infinite;
 }
 @keyframes scroll_drops {
-    from {transform: translateY(-50%);}
+    from {transform: translateY(-50.1%);}
     to {transform: translateY(0%); }
    }
-#triangles{
-    width: 40vw;
-    
-   }
-#triangle_1_container{  
-  border-left: 20vw solid transparent; 
-  border-right: 0px solid transparent; 
-  border-bottom: 10vw solid #FFB800; 
+   #triangle_1_container {
+    width: 0; 
+    height: 0;
+    border-left: 45vw solid transparent; 
+    border-right: 0 solid transparent; 
+    border-bottom: 20vw solid; 
+    animation: triangle_1 2s steps(2) infinite;
+  }
+  @keyframes triangle_1 {
+    0%{background-color: #FF7A00;}
+    100% {background-color: #E40000;}
+    }
+  #triangle_2_container {
+    width: 0; 
+    height: 0;
+    border-left: 0 solid transparent; 
+    border-right: 45vw solid transparent; 
+    border-bottom: 20vw solid; 
+    transform: scaleY(-1);
+    margin-top: -20vw;
+    animation: triangle_2 1.2s steps(2) infinite;
+  }
+  @keyframes triangle_2 {
+    0%{background-color: #E40000;}
+    100% {background-color: #FF7A00;}
+    }
+#rectangle{
+    width: 45vw;
+    height: 20vw;
+    display: flex;
+    position: relative;
+}
+#rectangle_1_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #FFD600;
+    animation: rectangle_1 7.2s linear infinite;
+}
+@keyframes rectangle_1 {
+    0%{background-color: #FFD600;}
+    20%{background-color: #FFB800;}
+    40%{background-color: #FF9900;}
+    60%{background-color: #FF7A00;}
+    80%{background-color: #EA4701;}
+    100%{background-color: #E40000;}
+    }
+#rectangle_2_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #FFB800;
+}
+#rectangle_3_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #FF9900;
+}
+#rectangle_4_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #FF7A00;
+}
+#rectangle_5_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #EA4701;
+}
+#rectangle_6_container{
+    width: 7.5vw;
+    height: 100%;
+    background-color: #E40000;
+}
+#pulse{
+    width: 90vw; 
+    height: 40vw;    
+    top: 20vw; 
+    left: 10vw;
+    position: absolute;      
+}
+#pulse_1_container{
+    width: 90vw;
+    height: 50vw;
+    background-color: #FFD600;
+    border-radius: 50%;
 }
