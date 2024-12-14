@@ -119,28 +119,16 @@ body{
    #triangle_1_container {
     width: 0; 
     height: 0;
-    border-left: 45vw solid transparent; 
-    border-right: 0 solid transparent; 
-    border-bottom: 20vw solid; 
-    animation: triangle_1 2s steps(2) infinite;
+    border-left: 45vw solid #EA4701; 
+    border-right: 0 solid #EA4701; 
+    border-bottom: 20vw solid #FFB800; 
+    animation: triangle_1 0.3s linear infinite;
   }
   @keyframes triangle_1 {
-    0%{background-color: #FF7A00;}
-    100% {background-color: #E40000;}
-    }
-  #triangle_2_container {
-    width: 0; 
-    height: 0;
-    border-left: 0 solid transparent; 
-    border-right: 45vw solid transparent; 
-    border-bottom: 20vw solid; 
-    transform: scaleY(-1);
-    margin-top: -20vw;
-    animation: triangle_2 1.2s steps(2) infinite;
-  }
-  @keyframes triangle_2 {
-    0%{background-color: #E40000;}
-    100% {background-color: #FF7A00;}
+    0%{border-left: 45vw solid #EA4701;
+        border-bottom: 20vw solid #FFB800;}
+    100% {border-left: 45vw solid #FFB800;
+        border-bottom: 20vw solid #EA4701;}
     }
 #rectangle{
     width: 45vw;
@@ -187,16 +175,25 @@ body{
     height: 100%;
     background-color: #E40000;
 }
-#pulse{
+.pulse{
     width: 90vw; 
-    height: 40vw;    
-    top: 20vw; 
+    height: 40vw;     
     left: 10vw;
-    position: absolute;      
+    position: relative; 
+    overflow: hidden;  
+    margin-top: -40vw;   
 }
 #pulse_1_container{
     width: 90vw;
-    height: 50vw;
+    height: 90vw;
     background-color: #FFD600;
     border-radius: 50%;
+    position: absolute;
+    margin-top: -20vw;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 1;}
+    50%{scale: 1.5;}
+    100%{scale: 1;}
 }
