@@ -194,6 +194,34 @@ body{
 }
 @keyframes pulse_1{
     0%{scale: 1;}
-    50%{scale: 1.5;}
+    50%{scale: 1.1;}
     100%{scale: 1;}
+}
+#pulse_2_container{
+    width: 85vw;
+    height: 85vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_2_container{
+    width: 85vw;
+    height: 85vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
 }
