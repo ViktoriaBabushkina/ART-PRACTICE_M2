@@ -175,7 +175,7 @@ body{
     height: 100%;
     background-color: #E40000;
 }
-.pulse{
+.third{
     width: 90vw; 
     height: 40vw;     
     left: 10vw;
@@ -204,9 +204,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_2 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_2{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -218,9 +218,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_3 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_3{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -232,9 +232,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_4 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_4{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -246,9 +246,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_5 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_5{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -260,23 +260,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_6 5s linear infinite;
 }
-@keyframes pulse_1{
-    0%{scale: 0.98;}
-    50%{scale: 1;}
-    100%{scale: 0.98;}
-}
-#pulse_7_container{
-    width: 60vw;
-    height: 60vw;
-    background-color: #FFB800;
-    border-radius: 50%;
-    margin: 2.5vw;
-    position: absolute;
-    animation: pulse_1 5s linear infinite;
-}
-@keyframes pulse_1{
+@keyframes pulse_6{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -288,9 +274,9 @@ body{
     border-radius: 50%;
     margin: 3.1vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_7 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_7{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -302,9 +288,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_8 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_8{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -316,9 +302,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_9 5s linear infinite;
 }
-@keyframes pulse_1{
+@keyframes pulse_9{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -330,23 +316,9 @@ body{
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
-    animation: pulse_1 5s linear infinite;
+    animation: pulse_10 5s linear infinite;
 }
-@keyframes pulse_1{
-    0%{scale: 0.98;}
-    50%{scale: 1;}
-    100%{scale: 0.98;}
-}
-#pulse_11_container{
-    width: 39vw;
-    height: 39vw;
-    background-color: #FF7A00;
-    border-radius: 50%;
-    margin: 2.5vw;
-    position: absolute;
-    animation: pulse_1 5s linear infinite;
-}
-@keyframes pulse_1{
+@keyframes pulse_10{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
@@ -392,4 +364,70 @@ body{
     0%{scale: 0.98;}
     50%{scale: 1;}
     100%{scale: 0.98;}
+}
+.fourth{
+    width: 100vw; 
+    height: 30vw;
+    position: relative; 
+    overflow: hidden;  
+}
+#stripes_1_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #FFD600;
+    animation: stripes_1 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_1 {
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
+  }
+#stripes_2_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #FFB800;
+    animation: stripes_2 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_2{
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
+}
+#stripes_3_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #FF9900;
+    animation: stripes_3 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_3{
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
+}
+#stripes_4_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #FF7A00;
+    animation: stripes_4 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_4{
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
+}
+#stripes_5_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #EA4701;
+    animation: stripes_5 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_5{
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
+}
+#stripes_6_container{
+    width: 100vw;
+    height: 5vw;
+    background-color: #E40000;
+    animation: stripes_6 2s infinite alternate ease-in-out;
+}
+@keyframes stripes_6{
+    from { transform: scaleY(1);}
+    to {transform: scaleY(0.5);}
 }
