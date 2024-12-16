@@ -189,13 +189,13 @@ body{
     background-color: #FFD600;
     border-radius: 50%;
     position: absolute;
-    margin-top: -20vw;
+    margin-top: -25vw;
     animation: pulse_1 5s linear infinite;
 }
 @keyframes pulse_1{
-    0%{scale: 1;}
+    0%{scale: 0.98;}
     50%{scale: 1.1;}
-    100%{scale: 1;}
+    100%{scale: 0.98;}
 }
 #pulse_2_container{
     width: 85vw;
@@ -211,10 +211,178 @@ body{
     50%{scale: 1;}
     100%{scale: 0.98;}
 }
-#pulse_2_container{
-    width: 85vw;
-    height: 85vw;
+#pulse_3_container{
+    width: 80vw;
+    height: 80vw;
+    background-color: #FFD600;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_4_container{
+    width: 75vw;
+    height: 75vw;
     background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_5_container{
+    width: 70vw;
+    height: 70vw;
+    background-color: #FFB800;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_6_container{
+    width: 65vw;
+    height: 65vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_7_container{
+    width: 60vw;
+    height: 60vw;
+    background-color: #FFB800;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_7_container{
+    width: 59vw;
+    height: 59vw;
+    background-color: #FF9900;
+    border-radius: 50%;
+    margin: 3.1vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_8_container{
+    width: 54vw;
+    height: 54vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_9_container{
+    width: 49vw;
+    height: 49vw;
+    background-color: #FF7A00;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_10_container{
+    width: 44vw;
+    height: 44vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_11_container{
+    width: 39vw;
+    height: 39vw;
+    background-color: #FF7A00;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_11_container{
+    width: 39vw;
+    height: 39vw;
+    background-color: #EA4701;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_12_container{
+    width: 34vw;
+    height: 34vw;
+    background-color: #2D1400;
+    border-radius: 50%;
+    margin: 2.5vw;
+    position: absolute;
+    animation: pulse_1 5s linear infinite;
+}
+@keyframes pulse_1{
+    0%{scale: 0.98;}
+    50%{scale: 1;}
+    100%{scale: 0.98;}
+}
+#pulse_13_container{
+    width: 29vw;
+    height: 29vw;
+    background-color: #E40000;
     border-radius: 50%;
     margin: 2.5vw;
     position: absolute;
