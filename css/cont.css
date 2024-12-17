@@ -77,7 +77,55 @@ body{
     60%{left: 25vw;top: 3vw;}
     80%{left: 45vw;top: 1vw;}
     100% {left: 50vw;top: 0vw;}
-    }
+}
+#circle_4_container{
+    background-color: #EA4701;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    animation: circle_4 5s linear infinite;
+    position: absolute;
+}
+@keyframes circle_4 {
+    0%{left: 25;top: 10vw;}
+    20%{left: 0;top: 8vw;;}
+    40%{left: 45vw;top: 10vw;}
+    60%{left: 50vw;top: 0vw;}
+    80%{left: 0vw;top: 8vw;}
+    100% {left: 25vw;top: 10vw;}
+}
+#circle_5_container{
+    background-color: #FFB800;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    animation: circle_5 5s linear infinite;
+    position: absolute;
+}
+@keyframes circle_5 {
+    0%{left: 0vw;top: 7vw;}
+    20%{left: 25vw;top: 10vw;}
+    40%{left: 50vw;top: 10vw;}
+    60%{left: 25vw;top: 0vw;}
+    80%{left: 10vw;top: 10vw;}
+    100% {left: 0vw;top: 7vw;}
+}
+#circle_6_container{
+    background-color: #FF9900;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    animation: circle_6 5s linear infinite;
+    position: absolute;
+}
+@keyframes circle_6 {
+    0%{left: 25vw;top: 1vw;}
+    20%{left: 50vw;top: 0vw;}
+    40%{left: 25vw;top: 3vw;}
+    60%{left: 0vw;top: 0vw;}
+    80%{left: 50vw;top: 3vw;}
+    100% {left: 25vw;top: 1vw;}
+}
 #string_1_container{
     background-color: #FFD600;
     width: 100%;
@@ -140,7 +188,7 @@ body{
     width: 7.5vw;
     height: 100%;
     background-color: #FFD600;
-    animation: rectangle_1 7.2s linear infinite;
+    animation: rectangle_1 3s linear infinite;
 }
 @keyframes rectangle_1 {
     0%{background-color: #FFD600;}
@@ -148,33 +196,84 @@ body{
     40%{background-color: #FF9900;}
     60%{background-color: #FF7A00;}
     80%{background-color: #EA4701;}
-    100%{background-color: #E40000;}
+    90%{background-color: #E40000;}
+    100%{background-color: #FFD600;}
     }
 #rectangle_2_container{
     width: 7.5vw;
     height: 100%;
     background-color: #FFB800;
+    animation: rectangle_2 3s linear infinite;
 }
+@keyframes rectangle_2 {
+    0%{background-color: #FFB800;}
+    20%{background-color: #FF9900;}
+    40%{background-color: #FF7A00;}
+    60%{background-color: #EA4701;}
+    80%{background-color: #E40000;}
+    90%{background-color: #FFD600;}
+    100%{background-color: #FFB800;}
+    }
 #rectangle_3_container{
     width: 7.5vw;
     height: 100%;
     background-color: #FF9900;
+    animation: rectangle_3 3s linear infinite;
 }
+@keyframes rectangle_3 {
+    0%{background-color: #FF9900;}
+    20%{background-color: #FF7A00;}
+    40%{background-color: #EA4701;}
+    60%{background-color: #E40000;}
+    80%{background-color: #FFD600;}
+    90%{background-color: #FFB800;}
+    100%{background-color: #FF9900;}
+    }
 #rectangle_4_container{
     width: 7.5vw;
     height: 100%;
     background-color: #FF7A00;
+    animation: rectangle_4 3s linear infinite;
 }
+@keyframes rectangle_4 {
+    0%{background-color: #FF7A00;}
+    20%{background-color: #EA4701;}
+    40%{background-color: #E40000;}
+    60%{background-color: #FFD600;}
+    80%{background-color: #FFB800;}
+    90%{background-color: #FF9900;}
+    100%{background-color: #FF7A00;}
+    }
 #rectangle_5_container{
     width: 7.5vw;
     height: 100%;
     background-color: #EA4701;
+    animation: rectangle_5 3s linear infinite;
 }
+@keyframes rectangle_5 {
+    0%{background-color: #EA4701;}
+    20%{background-color: #E40000;}
+    40%{background-color: #FFD600;}
+    60%{background-color: #FFB800;}
+    80%{background-color: #FF9900;}
+    90%{background-color: #FF7A00;}
+    100%{background-color: #EA4701;}
+    }
 #rectangle_6_container{
     width: 7.5vw;
     height: 100%;
     background-color: #E40000;
+    animation: rectangle_6 3s linear infinite;
 }
+@keyframes rectangle_6 {
+    0%{background-color: #E40000;}
+    20%{background-color: #FFD600;}
+    40%{background-color: #FFB800;}
+    60%{background-color: #FF9900;}
+    80%{background-color: #FF7A00;}
+    90%{background-color: #EA4701;}
+    100%{background-color: #E40000;}
+    }
 .third{
     width: 90vw; 
     height: 40vw;     
@@ -375,59 +474,159 @@ body{
     width: 100vw;
     height: 5vw;
     background-color: #FFD600;
+    transform-origin: top;
     animation: stripes_1 2s infinite alternate ease-in-out;
 }
 @keyframes stripes_1 {
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
-  }
+    to {transform: scaleY(0.7);}
+}
+.party_1_2{
+    white-space: nowrap;
+    animation: party_1 10s linear infinite;
+}
+.party_1_2:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes party_1 {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-50%); }
+}
 #stripes_2_container{
     width: 100vw;
     height: 5vw;
     background-color: #FFB800;
+    transform-origin: bottom;
     animation: stripes_2 2s infinite alternate ease-in-out;
 }
 @keyframes stripes_2{
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
+    to {transform: scaleY(1.3);}
+}
+.volcano_1_2{
+    white-space: nowrap;
+    animation: volcano_1 5s linear infinite;
+}
+.volcano_1_2:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes volcano_1 {
+    from {transform: translateX(-50%);}
+    to {transform: translateX(0%); }
 }
 #stripes_3_container{
     width: 100vw;
     height: 5vw;
     background-color: #FF9900;
+    transform-origin: top;
     animation: stripes_3 2s infinite alternate ease-in-out;
 }
+
 @keyframes stripes_3{
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
+    to {transform: scaleY(1.3);}
+}
+.awakening_1_1{
+    white-space: nowrap;
+    animation: awakening_1 10s linear infinite;
+}
+.awakening_1_1:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes awakening_1 {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-40%);}
 }
 #stripes_4_container{
     width: 100vw;
     height: 5vw;
     background-color: #FF7A00;
+    transform-origin: bottom;
     animation: stripes_4 2s infinite alternate ease-in-out;
 }
 @keyframes stripes_4{
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
+    to {transform: scaleY(0.7);}
+}
+.party_1_1{
+    white-space: nowrap;
+    animation: party_2 5s linear infinite;
+}
+.party_1_1:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes party_2 {
+    from {transform: translateX(-50%);}
+    to {transform: translateX(0%);}
 }
 #stripes_5_container{
     width: 100vw;
     height: 5vw;
     background-color: #EA4701;
+    transform-origin: top;
     animation: stripes_5 2s infinite alternate ease-in-out;
 }
 @keyframes stripes_5{
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
+    to {transform: scaleY(0.7);}
+}
+.volcano_1_1{
+    white-space: nowrap;
+    animation: volcano_2 10s linear infinite;
+}
+.volcano_1_1:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes volcano_2 {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-50%);}
 }
 #stripes_6_container{
     width: 100vw;
     height: 5vw;
     background-color: #E40000;
+    transform-origin: bottom;
     animation: stripes_6 2s infinite alternate ease-in-out;
 }
 @keyframes stripes_6{
     from { transform: scaleY(1);}
-    to {transform: scaleY(0.5);}
+    to {transform: scaleY(1.3);}
+}
+.awakening_1_2{
+    white-space: nowrap;
+    animation: awakening_2 5s linear infinite;
+}
+.awakening_1_2:hover{
+    animation-play-state: paused;
+    background-color: #2D1400;
+}
+@keyframes awakening_2 {
+    from {transform: translateX(-40%);}
+    to {transform: translateX(0%);}
+}
+.fifth{
+    width: 100vw; 
+    height: 50vw;
+    position: relative; 
+    overflow: hidden;  
+}
+#p{
+    position: relative;
+}
+#a{
+    position: relative;
+}
+#r{
+    position: relative;
+}
+#t{
+    position: relative;
+}
+#y{
+    position: relative;
 }
