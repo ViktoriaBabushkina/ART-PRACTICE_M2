@@ -482,16 +482,18 @@ body{
     to {transform: scaleY(0.7);}
 }
 .party_1_2{
-    white-space: nowrap;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    width: 170%;
+    margin-top: 0.8vw;
     animation: party_1 10s linear infinite;
 }
 .party_1_2:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes party_1 {
     from {transform: translateX(0%);}
-    to {transform: translateX(-50%); }
+    to {transform: translateX(-33.5%);}
 }
 #stripes_2_container{
     width: 100vw;
@@ -505,15 +507,17 @@ body{
     to {transform: scaleY(1.3);}
 }
 .volcano_1_2{
-    white-space: nowrap;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    width: 150%;
+    margin-top: 0.8vw;
     animation: volcano_1 5s linear infinite;
 }
 .volcano_1_2:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes volcano_1 {
-    from {transform: translateX(-50%);}
+    from {transform: translateX(-33.5%);}
     to {transform: translateX(0%); }
 }
 #stripes_3_container{
@@ -529,16 +533,18 @@ body{
     to {transform: scaleY(1.3);}
 }
 .awakening_1_1{
-    white-space: nowrap;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    width: 150%;
+    margin-top: 0.8vw;
     animation: awakening_1 10s linear infinite;
 }
 .awakening_1_1:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes awakening_1 {
     from {transform: translateX(0%);}
-    to {transform: translateX(-40%);}
+    to {transform: translateX(-33.5%);}
 }
 #stripes_4_container{
     width: 100vw;
@@ -552,15 +558,17 @@ body{
     to {transform: scaleY(0.7);}
 }
 .party_1_1{
-    white-space: nowrap;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    width: 170%;
+    margin-top: 0.8vw;
     animation: party_2 5s linear infinite;
 }
 .party_1_1:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes party_2 {
-    from {transform: translateX(-50%);}
+    from {transform: translateX(-33.5%);}
     to {transform: translateX(0%);}
 }
 #stripes_5_container{
@@ -575,16 +583,18 @@ body{
     to {transform: scaleY(0.7);}
 }
 .volcano_1_1{
-    white-space: nowrap;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    width: 150%;
+    margin-top: 0.8vw;
     animation: volcano_2 10s linear infinite;
 }
 .volcano_1_1:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes volcano_2 {
     from {transform: translateX(0%);}
-    to {transform: translateX(-50%);}
+    to {transform: translateX(-33.5%);}
 }
 #stripes_6_container{
     width: 100vw;
@@ -606,10 +616,9 @@ body{
 }
 .awakening_1_2:hover{
     animation-play-state: paused;
-    background-color: #2D1400;
 }
 @keyframes awakening_2 {
-    from {transform: translateX(-34%);}
+    from {transform: translateX(-33.5%);}
     to {transform: translateX(0%);}
 }
 .fifth{
@@ -662,6 +671,9 @@ body{
 #volcano{
     display: flex;
 }
+#volcano_f{
+    margin-left: -5vw;
+}
 .lava{
     position: absolute;
     width: 5vw;
@@ -670,18 +682,55 @@ body{
     animation: red_lava 2s linear infinite;
 }
 @keyframes red_lava {
-    0%{top: 15vw;left: 20vw}
-    100%{top: 50vw;left: 20vw}
+    0%{top: 25vw;left: 30vw}
+    50%{transform: rotate(30deg);}
+    100%{top: 50vw;left: 20vw; transform: rotate(20deg);}
+}
+.nearly_yellow{
+    animation: nearly_yellow_lava 4s linear infinite;
+}
+@keyframes nearly_yellow_lava {
+    0%{top: 25vw;left: 40vw}
+    50%{transform: rotate(30deg);}
+    100%{top: 50vw;left: 30vw; transform: rotate(20deg);}
+}
+.yellow{
+    animation: yellow_lava 2s linear infinite;
+}
+@keyframes yellow_lava {
+    0%{top: 25vw;left: 60vw}
+    50%{transform: rotate(-30deg);}
+    100%{top: 50vw;left: 70vw; transform: rotate(-40deg);}
+}
+.nearly_red{
+    animation: nearly_red_lava 4s linear infinite;
+}
+@keyframes nearly_red_lava {
+    0%{top: 25vw;left: 70vw}
+    50%{transform: rotate(-30deg);}
+    100%{top: 50vw;left: 80vw; transform: rotate(-40deg);}
 }
 #volcano_f:hover ~ .group, #volcano_s:hover ~ .group{
-    animation: group_1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    animation: group 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
-@keyframes group_1 {
+@keyframes group {
     0%{top: 0vw;left: 20vw; opacity: 1;}
-    100%{top: -15vw;left: 10vw; opacity: 1;}
+    100%{top: -15vw;left: 0vw; opacity: 1;}
 }
 .group{
     opacity: 0;
-    margin-top: 20vw;
+    margin-top: 15vw;
     position: absolute;
 }
+@keyframes group_1 {
+    0%{top: 0vw;left: 20vw; opacity: 1;}
+    100%{top: -15vw;left: 0vw; opacity: 1;}
+}
+#volcano_f:hover ~ .group_1, #volcano_s:hover ~ .group_1{
+    animation: group_1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+.group_1{
+    opacity: 0;
+    margin-top: 15vw;
+    position: absolute;
+}  
