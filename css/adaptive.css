@@ -1,4 +1,4 @@
-@media screen and (min-width: 1px) and (max-width: 769px) {
+@media screen and (min-width: 431px) and (max-width: 769px) {
     #rectangle{
         display: none;
     }
@@ -51,7 +51,7 @@
         100%{top: -15vw;left: 40%; opacity: 1;}
     }
 }
-@media screen and (min-width: 1px) and (max-width: 414px) {
+@media screen and (min-width: 1px) and (max-width: 430px) {
     #circle_2_container, #circle_3_container, #circle_4_container, #circle_5_container, #circle_6_container {
         display: none;
     }
